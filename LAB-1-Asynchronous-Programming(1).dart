@@ -1,11 +1,10 @@
 Future<String> fetchData() async {
-  await Future.delayed(Duration(seconds: 2));
+  await Future.delayed(Duration(seconds: 2)); // Simulating an asynchronous operation
   return 'Data fetched successfully!';
 }
 
-void main() {
-  print('Waiting for data');
-  fetchData().then((result) {
-    print(result);
-  });
+void main() async {
+  print('Waiting for data...');
+  String result = await fetchData();
+  print(result);
 }
