@@ -6,9 +6,9 @@ class Car {
   Car(this.brand, this.model, this.year);
 
   void carProperties() {
-    print('$brand');
-    print('$model');
-    print('$year');
+    print('Brand: $brand');
+    print('Model: $model');
+    print('Year: $year');
   }
 
   void makeSound() {
@@ -16,8 +16,21 @@ class Car {
   }
 }
 
+class ElectricCar extends Car {
+  int batteryLife;
+
+  ElectricCar(String brand, String model, int year, this.batteryLife)
+      : super(brand, model, year);
+
+  void electricCarProperties() {
+    carProperties();
+    print('Battery Life: $batteryLife');
+  }
+}
+
 void main() {
-  Car labCar = Car('Marchedis', 'Corolla', 2019);
-  labCar.carProperties();
-  labCar.makeSound();
+  ElectricCar labElectricCar = ElectricCar('toyota', 'Model S', 2023, 1200);
+
+  labElectricCar.makeSound();
+  labElectricCar.electricCarProperties();
 }
