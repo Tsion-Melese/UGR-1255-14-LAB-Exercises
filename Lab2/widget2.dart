@@ -206,7 +206,15 @@ class CartPage extends StatelessWidget {
                               width: double.infinity,
                               child: ElevatedButton(
                                 onPressed: () {},
-                                child: Text('Checkout'),
+                                style: ElevatedButton.styleFrom(
+                                  primary: Colors.orange,
+                                ),
+                                child: Text(
+                                  'Checkout',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold),
+                                ),
                               ),
                             ),
                           ],
