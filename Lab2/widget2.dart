@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
 class CartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -74,7 +75,7 @@ class CartPage extends StatelessWidget {
                     Container(
                       width: 100,
                       height: 100,
-                      child: Image.asset('assests/download (1).jpg'),
+                      child: Image.asset('assets/download (1).jpg'),
                     ),
                     SizedBox(width: 8),
                     Expanded(
@@ -119,7 +120,7 @@ class CartPage extends StatelessWidget {
                     Container(
                       width: 100,
                       height: 100,
-                      child: Image.asset('assests/download (1).jpg'),
+                      child: Image.asset('assets/download (1).jpg'),
                     ),
                     SizedBox(width: 8),
                     Expanded(
@@ -157,6 +158,63 @@ class CartPage extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+            ),
+            SizedBox(height: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(height: 16),
+                  SizedBox(
+                    width: double.infinity,
+                    child: Card(
+                      color: Colors.grey[200],
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 8),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Subtotal',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '60.98',
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 8),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'TAX',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '6.10',
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 16),
+                            SizedBox(
+                              width: double.infinity,
+                              child: ElevatedButton(
+                                onPressed: () {},
+                                child: Text('Checkout'),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
