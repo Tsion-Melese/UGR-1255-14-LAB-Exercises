@@ -62,8 +62,8 @@ class BmiCalculetor extends StatelessWidget {
                 Expanded(
                   child: GestureDetector(
                     child: Container(
-                      width: 150, // Set the desired width
-                      height: 150, // Set the desired height
+                      width: 150, 
+                      height: 150, 
                       child: Card(
                         color: Colors.grey[800],
                         child: Column(
@@ -71,12 +71,12 @@ class BmiCalculetor extends StatelessWidget {
                           children: [
                             Icon(Icons.female,
                                 color: Colors.white,
-                                size: 50), // Increase the size of the icon
+                                size: 50), 
                             Text(
                               'Female',
                               style: TextStyle(
                                   fontSize:
-                                      20), // Increase the font size of the text
+                                      20), 
                             ),
                           ],
                         ),
@@ -131,54 +131,54 @@ class BmiCalculetor extends StatelessWidget {
                   child: GestureDetector(
                     child: Card(
                       color: Colors
-                          .grey[800], // Set grey[800] background for the card
+                          .grey[800], 
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
-                            20.0), // Rounded corners for the card
+                            20.0),
                       ),
                       child: Container(
                         padding: EdgeInsets.all(
-                            20.0), // Padding for the card content
+                            20.0), 
                         child: Column(
                           children: [
                             Text(
                               'Weight',
                               style: TextStyle(
-                                  color: Colors.grey), // Set text color to grey
+                                  color: Colors.grey), 
                             ),
                             SizedBox(
-                                height: 10), // Spacer between texts and icons
+                                height: 10), 
                             Text(
                               '50',
                               style: TextStyle(
                                 fontSize: 24.0,
-                                color: Colors.white, // Set text color to white
-                                fontWeight: FontWeight.bold, // Set text to bold
+                                color: Colors.white, 
+                                fontWeight: FontWeight.bold, 
                               ),
                             ),
                             SizedBox(
-                                height: 10), // Spacer between text and icons
+                                height: 10), 
                             Row(
                               mainAxisAlignment: MainAxisAlignment
-                                  .center, // Center icons horizontally
+                                  .center, 
                               children: [
                                 CircleAvatar(
                                   backgroundColor: Colors
-                                      .blue, // Set circle background color to blue
+                                      .blue, 
                                   child: Icon(
                                     Icons.remove,
                                     color:
-                                        Colors.white, // Set icon color to white
+                                        Colors.white, 
                                   ),
                                 ),
-                                SizedBox(width: 20), // Spacer between icons
+                                SizedBox(width: 20), 
                                 CircleAvatar(
                                   backgroundColor: Colors
-                                      .blue, // Set circle background color to blue
+                                      .blue, 
                                   child: Icon(
                                     Icons.add,
                                     color:
-                                        Colors.white, // Set icon color to white
+                                        Colors.white, 
                                   ),
                                 ),
                               ],
@@ -243,7 +243,7 @@ class BmiCalculetor extends StatelessWidget {
               ],
             ),
             Container(
-              color: Colors.purple, // Set purple background for the container
+              color: Colors.purple,
               margin: EdgeInsets.only(top: 10.0),
               height: 50.0,
               child: Center(
@@ -252,7 +252,7 @@ class BmiCalculetor extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white, // Set text color to white
+                    color: Colors.white,
                   ),
                 ),
               ),
