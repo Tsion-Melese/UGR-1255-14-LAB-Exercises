@@ -1,5 +1,18 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: CarPage(),
+    );
+  }
+}
+
 class CarPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -40,34 +53,28 @@ class CarPage extends StatelessWidget {
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(height: 16), // Add space between text and icons
+            SizedBox(height: 16),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 IconButton(
                   icon: Icon(Icons.thumb_up),
-                  onPressed: () {
-                    // Add functionality for like button
-                  },
+                  onPressed: () {},
                 ),
                 Text("0"),
                 IconButton(
                   icon: Icon(Icons.mode_comment),
-                  onPressed: () {
-                    // Add functionality for comment button
-                  },
+                  onPressed: () {},
                 ),
                 Text("0"),
                 IconButton(
                   icon: Icon(Icons.share),
-                  onPressed: () {
-                    // Add functionality for share button
-                  },
+                  onPressed: () {},
                 ),
                 Text("Share")
               ],
             ),
-            SizedBox(height: 25), // Add space between divider and texts
+            SizedBox(height: 25),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -87,12 +94,12 @@ class CarPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 16), // Add space between icons and divider
+            SizedBox(height: 16),
             Container(
-              color: Colors.black, // Add divider
+              color: Colors.black,
               height: 1,
             ),
-            SizedBox(height: 8), // Add space between divider and next content
+            SizedBox(height: 8),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
@@ -102,7 +109,7 @@ class CarPage extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.check_circle,
-                        color: Colors.green, // Green color for tick icon
+                        color: Colors.green,
                       ),
                       SizedBox(width: 8),
                       Text(
@@ -112,7 +119,7 @@ class CarPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 8), // Add space between texts
+                  SizedBox(height: 8),
                   Text(
                     'Year: 1997',
                     style: TextStyle(fontSize: 17, color: Colors.grey[800]),
@@ -129,12 +136,12 @@ class CarPage extends StatelessWidget {
                     'VIN: 9115400029',
                     style: TextStyle(fontSize: 17, color: Colors.grey[800]),
                   ),
-                  SizedBox(height: 20), // Add space between texts and divider
+                  SizedBox(height: 20),
                   Container(
-                    color: Colors.grey[800], // Add grey thick
+                    color: Colors.grey[800],
                     height: 1,
                   ),
-                  SizedBox(height: 20), // Add space between divider and photo
+                  SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -144,44 +151,42 @@ class CarPage extends StatelessWidget {
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                       IconButton(
-                        icon: Icon(Icons.edit), // Pen icon for editing
-                        onPressed: () {
-                          // Add functionality for editing
-                        },
+                        icon: Icon(Icons.edit),
+                        onPressed: () {},
                       ),
                     ],
                   ),
                 ],
               ),
             ),
-            SizedBox(height: 20), // Add space between photo and the bottom
+            SizedBox(height: 20),
             Container(
-              color: Colors.grey[800], // Add grey thick at the bottom
+              color: Colors.grey[800],
               height: 1,
             ),
-            SizedBox(height: 8), // Add space between divider and photo text
+            SizedBox(height: 8),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Photo', // Text "Photo"
+                    'Photo',
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Icon(
-                    Icons.edit, // Pen icon for editing
-                    color: Colors.black, // Color of the pen icon
+                    Icons.edit,
+                    color: Colors.black,
                   ),
                 ],
               ),
             ),
-            SizedBox(height: 20), // Add space between photo and the bottom
+            SizedBox(height: 20),
             Container(
-              color: Colors.grey[800], // Add grey thick at the bottom
+              color: Colors.grey[800],
               height: 1,
             ),
           ],
