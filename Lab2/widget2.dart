@@ -63,7 +63,7 @@ class CartPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 16), // Adjust spacing between elements
+            SizedBox(height: 16),
 
             // Cards
             Card(
@@ -99,7 +99,7 @@ class CartPage extends StatelessWidget {
                           icon: Icon(Icons.add),
                           onPressed: () {},
                         ),
-                        Text('1.0'), // Replace with actual value
+                        Text('1.0'),
                         IconButton(
                           icon: Icon(Icons.remove),
                           onPressed: () {},
@@ -110,7 +110,7 @@ class CartPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 16), // Adjust spacing between cards
+            SizedBox(height: 16),
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -145,12 +145,12 @@ class CartPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         IconButton(
-                          icon: Icon(Icons.remove),
+                          icon: Icon(Icons.add),
                           onPressed: () {},
                         ),
-                        Text('2.0'), // Replace with actual value
+                        Text('2.0'),
                         IconButton(
-                          icon: Icon(Icons.add),
+                          icon: Icon(Icons.remove),
                           onPressed: () {},
                         ),
                       ],
